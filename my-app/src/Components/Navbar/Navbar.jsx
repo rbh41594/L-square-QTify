@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import Button from "../Button/Button";
-import styles from "./Navbar.css"
+import styles from "./Navbar.module.css";
 
 function Navbar() {
   return (
