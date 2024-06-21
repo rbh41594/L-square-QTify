@@ -2,11 +2,11 @@ import React from "react";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import Button from "../Button/Button";
-import styles from "./Navbar.module.css";
+import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className={styles.navbar}>
+    <nav className="navbar">
       <a href="/">
         <Logo />
       </a>

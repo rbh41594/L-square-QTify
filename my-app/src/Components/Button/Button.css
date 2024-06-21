@@ -1,14 +1,16 @@
 .button {
   background-color: var(--color-black);
   color: var(--color-primary);
-  width: Hug (170px) px;
-  height: Hug (47px) px;
+  width: 9rem;
+  height: 3rem;
   top: 13px;
-  left: 1238px;
+  left: 1238;
   padding: 10px 16px 10px 16px;
   gap: 10px;
-  border-radius: 12px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
+  border-radius: 12px;
   opacity: 0px;
   cursor: pointer;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
