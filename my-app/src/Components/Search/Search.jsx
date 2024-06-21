@@ -3,9 +3,8 @@ import "./Search.css";
 import { ReactComponent as SearchIcon } from "../../Assets/Search-icon.svg";
 
 function Search() {
-  // const defaultText = "Search for an album of your choice...";
-  const defaultText = "search";
-  const [query, setQuery] = useState(defaultText);
+  // const defaultText = "Search a song";
+  const [query, setQuery] = useState();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,27 +15,27 @@ function Search() {
     setQuery(e.target.value);
   };
 
-  const handleFocus = () => {
-    if (query === defaultText) {
-      setQuery("");
-    }
-  };
+  // const handleFocus = () => {
+  //   if (query === defaultText) {
+  //     setQuery("");
+  //   }
+  // };
 
-  const handleBlur = () => {
-    if (query === "") {
-      setQuery(defaultText);
-    }
-  };
+  // const handleBlur = () => {
+  //   if (query === "") {
+  //     setQuery(defaultText);
+  //   }
+  // };
 
   return (
     <form className="wrapper" onSubmit={handleSubmit}>
       <input
         className="search"
         value={query}
-        placeholder={query}
+        placeholder="Search a song"
         onChange={handleInputChange}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
+        // onFocus={handleFocus}
+        // onBlur={handleBlur}
         inputProps={{ "aria-label": "search" }}
       />
       <button className="search-button" type="submit">
