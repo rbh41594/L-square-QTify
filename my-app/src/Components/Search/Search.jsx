@@ -20,7 +20,7 @@ function Search() {
         className="search"
         value={query}
         onChange={handleInputChange}
-        placeholder="Search for an album of your choice..."
+        placeholder="Search"
         inputProps={{ "aria-label": "search" }}
       />
       <button className="search-button" type="submit">
