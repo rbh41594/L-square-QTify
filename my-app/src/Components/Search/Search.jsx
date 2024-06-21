@@ -33,6 +33,7 @@ function Search() {
       <input
         className="search"
         value={query}
+        placeholder={query}
         onChange={handleInputChange}
         onFocus={handleFocus}
         onBlur={handleBlur}
