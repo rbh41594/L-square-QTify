@@ -3,7 +3,8 @@ import "./Search.css";
 import { ReactComponent as SearchIcon } from "../../Assets/Search-icon.svg";
 
 function Search() {
-  const defaultText = "Search for an album of your choice...";
+  // const defaultText = "Search for an album of your choice...";
+  const defaultText = "search";
   const [query, setQuery] = useState(defaultText);
 
   const handleSubmit = (e) => {
