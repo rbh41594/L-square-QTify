@@ -1,0 +1,20 @@
+.carouselWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.toggleText {
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.cardWrap {
+    margin-top: 18px;
+}
