@@ -1,6 +1,6 @@
 import React from "react";
-import Tooltip from '@mui/material/Tooltip';
-import Chip from '@mui/material/Chip';
+import Tooltip from "@mui/material/Tooltip";
+import Chip from "@mui/material/Chip";
 import styles from "./card.module.css";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,10 @@ function Card({ data, type }) {
                     <Chip
                       label={`${follows} Follows`}
                       size="small"
-                      className={styles.chip}
+                      style={{
+                        backgroundColor: "var(--color-black)",
+                        color: "var(--color-white)"
+                      }}
                     />
                   </div>
                 </div>
@@ -39,7 +42,11 @@ function Card({ data, type }) {
             <div className={styles.card}>
               <img src={image} alt="song" loading="lazy" />
               <div className={styles.banner}>
-                <Chip label={`${likes} likes`} size="small" className={styles.chip} />
+                <Chip
+                  label={`${likes} likes`}
+                  size="small"
+                  className={styles.chip}
+                />
               </div>
             </div>
             <div className={styles.title}>

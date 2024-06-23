@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   const { topAlbums = [], newAlbums = [] } = data;
-
+ 
   return (
     <div>
       <StyledEngineProvider>

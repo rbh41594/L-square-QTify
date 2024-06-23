@@ -14,7 +14,7 @@ export default function CarouselLeft() {
   }, []);
   return (
     <div className={styles.leftNav}>
-        {!atStart && <LeftArrow onClick={() => swiper.slidePrev}/>}
+        {!atStart && <LeftArrow onClick={() => swiper.slidePrev()}/>}
     </div>
   )
 }

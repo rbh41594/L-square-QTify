@@ -30,9 +30,7 @@ export default function Section({ title, data, type }) {
           ) : (
             <Carousel
               data={data}
-              renderComponent={(data) => (
-                <Card data={data} type={type} />
-              )}
+              renderComponent={ (data) => <Card data={data} type={type} /> }
             />
           )}
         </div>

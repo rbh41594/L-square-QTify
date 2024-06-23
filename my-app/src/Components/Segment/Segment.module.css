@@ -1,13 +1,13 @@
-.segmentWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.segmentWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .toggleText {

@@ -14,7 +14,7 @@ export default function CarouselRight() {
   }, []);
   return (
     <div className={styles.rightNav}>
-        {!atEnd && <RightArrow onClick={() => swiper.slideNext}/>}
+        {!atEnd && <RightArrow onClick={() => swiper.slideNext()}/>}
     </div>
   )
 }
