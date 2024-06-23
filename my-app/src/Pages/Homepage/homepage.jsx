@@ -11,7 +11,6 @@ function Homepage() {
       <Hero />
       <Segment title="Top Albums" data={topAlbums} type="album"/>
       <Segment title="New Albums" data={newAlbums} type="album"/>
-
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import { Tooltip, Chip } from "@mui/material";
-import "./card.css";
+import Tooltip from '@mui/material/Tooltip';
+import Chip from '@mui/material/Chip';
+import styles from "./card.module.css";
 import { Link } from "react-router-dom";
 
 function Card({ data, type }) {
@@ -10,19 +11,19 @@ function Card({ data, type }) {
         const { image, follows, title, slug, songs } = data;
         return (
           <Tooltip title={`${songs.length} songs`} placement="top" arrow>
-            <Link href={`album/${slug}`}>
-              <div className="wrapper">
-                <div className="card">
+            <Link to={`album/${slug}`}>
+              <div className={styles.wrapper}>
+                <div className={styles.card}>
                   <img src={image} alt="album-image" loading="lazy" />
-                  <div className="banner">
+                  <div className={styles.banner}>
                     <Chip
                       label={`${follows} Follows`}
                       size="small"
-                      className="chip"
+                      className={styles.chip}
                     />
                   </div>
                 </div>
-                <div className="title">
+                <div className={styles.title}>
                   <p>{title}</p>
                 </div>
               </div>
@@ -34,14 +35,14 @@ function Card({ data, type }) {
       case "song": {
         const { image, likes, title } = data;
         return (
-          <div className="wrapper">
-            <div className="card">
+          <div className={styles.wrapper}>
+            <div className={styles.card}>
               <img src={image} alt="song" loading="lazy" />
-              <div className="banner">
-                <Chip label={`${likes} likes`} size="small" className="chip" />
+              <div className={styles.banner}>
+                <Chip label={`${likes} likes`} size="small" className={styles.chip} />
               </div>
             </div>
-            <div className="title">
+            <div className={styles.title}>
               <p>{title}</p>
             </div>
           </div>

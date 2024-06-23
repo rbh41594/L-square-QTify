@@ -1,10 +1,10 @@
 import React from "react";
-import "./hero.css";
+import styles from "./hero.module.css";
 import headphones from "../../Assets/headphones.svg";
 
 export default function Hero() {
   return (
-    <div className="hero">
+    <div className={styles.hero}>
       <div>
         <h1>100 Thousand Songs, ad-free</h1>
         <h1>Over thousands podcast episodes</h1>

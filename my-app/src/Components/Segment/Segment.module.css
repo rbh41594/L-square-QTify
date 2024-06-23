@@ -1,4 +1,4 @@
-.carouselWrapper {
+.segmentWrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -7,7 +7,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .toggleText {

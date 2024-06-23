@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Search.css";
+import styles from "./Search.module.css";
 import { ReactComponent as SearchIcon } from "../../Assets/Search-icon.svg";
 
 function Search() {
@@ -28,9 +28,9 @@ function Search() {
   // };
 
   return (
-    <form className="wrapper" onSubmit={handleSubmit}>
+    <form className={styles.wrapper} onSubmit={handleSubmit}>
       <input
-        className="search"
+        className={styles.search}
         value={query}
         placeholder="Search a song"
         onChange={handleInputChange}
@@ -38,7 +38,7 @@ function Search() {
         // onBlur={handleBlur}
         inputProps={{ "aria-label": "search" }}
       />
-      <button className="search-button" type="submit">
+      <button className={styles.button} type="submit">
         <SearchIcon />
       </button>
     </form>
