@@ -42,11 +42,9 @@ function Card({ data, type }) {
             <div className={styles.card}>
               <img src={image} alt="song" loading="lazy" />
               <div className={styles.banner}>
-                <Chip
-                  label={`${likes} likes`}
-                  size="small"
-                  className={styles.chip}
-                />
+                <div className={styles.pill}>
+                  <p>{likes} Likes</p>
+                </div>
               </div>
             </div>
             <div className={styles.title}>
