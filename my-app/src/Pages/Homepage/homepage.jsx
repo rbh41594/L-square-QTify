@@ -18,7 +18,7 @@ function Homepage() {
           title="Songs"
           data={songs}
           filterSource={fetchFilters}
-          type="songs"
+          type="song"
         />
       </div>
     </>
